@@ -8,9 +8,12 @@ int scyfr(int);
 
 int main()
 {
-	cout << "Program zliczy sume cyfr liczby." << endl << "Podaj liczbe wieksza od 1000: " << endl;
-	int liczba;
-	cin >> liczba;
+	
+	int liczba =0;
+	while (liczba < 1000){ // pętla nie dopuści do wpisania liczby mniejszej od 1000
+		cout << "Program zliczy sume cyfr liczby." << endl << "Podaj liczbe wieksza od 1000: " << endl;
+		cin >> liczba;
+	}
 	cout << "Suma cyfr " << liczba << " wynosi: " << scyfr(liczba) << endl;
 
 
